@@ -5,6 +5,38 @@
     <string name="empty">empty</string>
     <string name="mainLinearLayout">mainLinearLayout</string>
     <string name="keyBoardLinearLayout"></string>
-    <string name="rightLinearLayout"></string>
-    <string name="leftLinearLayout"></string>
+    <string name="div">÷</string>
+    <string name="division">div</string>
+    <string name="sum">+</string>
+    <string name="total">sum</string>
+    <string name="minus">-</string>
+    <string name="submission">minus</string>
+    <string name="equal">=</string>
+    <string name="alike">equal</string>
+    <string name="zero">0</string>
+    <string name="zeroButton">zero</string>
+    <string name="one">1</string>
+    <string name="oneButton">one</string>
+    <string name="tow">2</string>
+    <string name="towButton">tow</string>
+   <string name="three">3</string>
+    <string name="threeButton">three</string>
+    <string name="four">4</string>
+    <string name="fourButton">four</string>
+    <string name="five">5</string>
+    <string name="fiveButton">five</string>
+    <string name="six">6</string>
+    <string name="sixButton">six</string>
+    <string name="seven">7</string>
+    <string name="sevenButton">seven</string>
+    <string name="eight">8</string>
+    <string name="eightButton">eight</string>
+    <string name="nine">9</string>
+    <string name="nineButton">nine</string>
+    <string name="dot">.</string>
+    <string name="dotButton">dot</string>
+    <string name="multiplication">✖</string>
+    <string name="multiplicationButton">Multiplication</string>
+
+
 </resources>
