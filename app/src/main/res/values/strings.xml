@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HW7_Q1</string>
+    <string name="calculateView"></string>
+    <string name="deleteButton">DELETE</string>
+    <string name="empty">empty</string>
+    <string name="mainLinearLayout">mainLinearLayout</string>
+    <string name="keyBoardLinearLayout"></string>
+    <string name="rightLinearLayout"></string>
+    <string name="leftLinearLayout"></string>
 </resources>
