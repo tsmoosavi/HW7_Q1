@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         binding.calculateView.text = binding.fourButton.text.toString() + binding.sevenButton.text .toString() // "+" dosenot work
         for (button in buttonList) {
             button.setOnClickListener {
-                binding.calculateView.text.toString() += button.text.toString()
+                binding.calculateView.text = binding.calculateView.text.toString()+  button.text.toString()
 
                 firstNumber = binding.calculateView.text.toString().toDouble()
                 secondNumber = binding.calculateView.text.toString().toDouble()
