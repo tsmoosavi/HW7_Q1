@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">HW7_Q1</string>
     <string name="calculateView"></string>
-    <string name="deleteButton">DELETE</string>
+    <string name="delete">DELETE</string>
     <string name="empty">empty</string>
+    <string name="deleteButton">deleteButton</string>
     <string name="mainLinearLayout">mainLinearLayout</string>
-    <string name="keyBoardLinearLayout"></string>
     <string name="div">÷</string>
     <string name="division">div</string>
     <string name="sum">+</string>
