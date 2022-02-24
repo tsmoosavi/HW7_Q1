@@ -37,10 +37,14 @@ class MainActivity : AppCompatActivity() {
             binding.total,
             binding.dotButton,
         )
+        var a = ""
+        while (a == "=" ){
+
+        }
         for (button in buttonList) {
             button.setOnClickListener {
+                a = button.text.toString()
                 binding.calculateView.text = binding.calculateView.text.toString()+  button.text.toString()
-                firstNumber = button.text.toString().toDouble()
                 Toast.makeText(this, button.text, Toast.LENGTH_SHORT).show()
             }
         }
@@ -54,17 +58,51 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, button.text, Toast.LENGTH_SHORT).show()
         }
 
-
-    }
-
-    fun delete() {
         binding.deleteButton.setOnClickListener {
             binding.calculateView.text = ""
         }
-        fun calculat(number1: Double, number2:Double){
-
-
+        binding.total.setOnClickListener{
+            sum()
+        }
+        binding.submission.setOnClickListener{
+            minus()
+        }
+        binding.division.setOnClickListener{
+            div()
+        }
+        binding.multiplicationButton.setOnClickListener{
+            multiplication()
         }
 
+
+
     }
+
+
+        fun sum(){
+            var entry = binding.calculateView.text
+            var entryList = entry.split("+")
+            var secondEnteredNumber = entryList[1].split("=")
+            println(entryList[0].toInt()+ secondEnteredNumber[0].toInt())
+            }
+
+    fun minus(){
+        var entry = binding.calculateView.text
+        var entryList = entry.split("-")
+        var secondEnteredNumber = entryList[1].split("=")
+        println(entryList[0].toInt() - secondEnteredNumber[0].toInt())
+    }
+    fun div(){
+        var entry = binding.calculateView.text
+        var entryList = entry.split("÷")
+        var secondEnteredNumber = entryList[1].split("=")
+        println(entryList[0].toInt() / secondEnteredNumber[0].toInt())
+    }
+    fun multiplication(){
+        var entry = binding.calculateView.text
+        var entryList = entry.split("✖")
+        var secondEnteredNumber = entryList[1].split("=")
+        println(entryList[0].toInt() * secondEnteredNumber[0].toInt())
+    }
+
 }
