@@ -23,10 +23,21 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "DELETE", Toast.LENGTH_SHORT).show()
         }
         binding.alike.setOnClickListener {
-            sum()
-            minus()
+
+            if(binding.calculateView.text.contains("✖")){
+                multiplication()
+            }
+            if(binding.calculateView.text.contains("+")){
+               sum()
+            }
+            if(binding.calculateView.text.contains("-")){
+                minus()
+            }
+            if(binding.calculateView.text.contains("÷")){
             div()
-            multiplication()
+        }
+
+
         }
 
 }
