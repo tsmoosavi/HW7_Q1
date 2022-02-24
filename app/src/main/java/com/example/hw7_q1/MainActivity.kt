@@ -37,24 +37,33 @@ class MainActivity : AppCompatActivity() {
             binding.total,
             binding.dotButton,
         )
-        binding.calculateView.text = binding.fourButton.text.toString() + binding.sevenButton.text .toString() // "+" dosenot work
         for (button in buttonList) {
             button.setOnClickListener {
                 binding.calculateView.text = binding.calculateView.text.toString()+  button.text.toString()
-
-                firstNumber = binding.calculateView.text.toString().toDouble()
-                secondNumber = binding.calculateView.text.toString().toDouble()
-
-
+                firstNumber = button.text.toString().toDouble()
                 Toast.makeText(this, button.text, Toast.LENGTH_SHORT).show()
             }
         }
+        for (button in oprationList){
+            binding.calculateView.text = binding.calculateView.text.toString()+  button.text.toString()
+            Toast.makeText(this, button.text, Toast.LENGTH_SHORT).show()
+        }
+        for (button in buttonList){
+            binding.calculateView.text = binding.calculateView.text.toString()+  button.text.toString()
+            secondNumber = button.text.toString().toDouble()
+            Toast.makeText(this, button.text, Toast.LENGTH_SHORT).show()
+        }
+
 
     }
 
     fun delete() {
         binding.deleteButton.setOnClickListener {
-            binding.calculateView.clearComposingText()
+            binding.calculateView.text = ""
+        }
+        fun calculat(number1: Double, number2:Double){
+
+
         }
 
     }
